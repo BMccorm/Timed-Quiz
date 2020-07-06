@@ -165,7 +165,7 @@ input::placeholder {
 #highScoresList {
 list-style: none;
 list-style-position: outside;
-margin-bottom: 3rem;
+margin-bottom: 4rem;
 padding-right: 2rem;
 }
 
@@ -182,17 +182,3 @@ color: lightblue;
     .flex-column { 
         width: 400px;
 }
-
-/* h1 > span {
-  font-size: 24px;
-  font-weight: 500;
-} */
-
-/* h3 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-h4 {
-  margin-bottom: 1rem;
-}  */
