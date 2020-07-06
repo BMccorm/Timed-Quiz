@@ -12,7 +12,6 @@ let acceptiongAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let clock = 30;
 
 window.onload = function () {
   document.querySelector("#loseTime").onclick = stopwatch.loseTime;
@@ -31,7 +30,7 @@ var clockRunning = false;
 
 // Our stopwatch object
 var stopwatch = {
-  time: 3,
+  time: 30,
 
   reset: function () {
     stopwatch.time = 60;
@@ -208,29 +207,10 @@ const MAX_QUESTIONS = 5;
 StartGame = () => {
   questionCounter = 0;
   score = 0;
-  // setInterval(function () {
-  //   clock -- 1;
-  // }, 1000);
-  // console.log(setInterval)
   availableQuestions = [...questions];
   //   the ... creates a live copy of our questions so they can be updated without disrupting the code
   getNewQuestion();
 };
-
-// timer starts when quiz begins
-// incorrect answer subtracts time from clock
-// game is over when all questions answered or timer hits zero
-// save name and score based on time?
-
-// attach to dom element
-// create countdown and clearTimeout
-// if answer is wrong, subtract time from clock
-// if timer ends move to highscores page
-// or keep showing questions.
-
-// if answered questions = 5, move to high score page
-
-// score = is based on correct answers, not timer ?
 
 getNewQuestion = () => {
   //start time
@@ -269,6 +249,7 @@ getNewQuestion = () => {
 };
 
 // This grabs each choice, adds an event listener "click", turns the event into an argument and gives a data attribute reference to what choice the user clicked
+
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;

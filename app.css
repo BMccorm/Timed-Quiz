@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color:#4C5F6B;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -9,23 +9,21 @@ body {
   margin: 0;
 }
 
-#display{
-  color: black;
-}
 
 .container {
-  background-color: blue;
-  padding: 2rem;
+  background-color:#2b3d41;
+  width: 40rem;
+padding:2rem 0rem 2rem 0rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+  margin: 1rem;
 }
 
 #home-page {
   font-size: 54px;
-  color: brown;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -42,18 +40,22 @@ h2 {
 .flex-column {
   display: flex;
   flex-direction: column;
-  background-color: burlywood;
-  width: 600px;
-  height: 370px;
+  width: 500px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Answer options */
 .choice-container {
-  background-color: crimson;
-  display: flex;
-  margin-bottom: 7px;
+   color: #4C5F6B;
+  background-color: #EDffab;
+  margin-bottom: 10px;
   height: 50px;
+  width: 100%;
   align-items: center;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .choice-container:hover {
@@ -63,35 +65,19 @@ h2 {
   transition: transform 150ms;
 }
 
-.choice-text {
-  padding: 1.5rem;
-  width: 100%;
-}
-
-.choice-prefix {
-  padding: 1rem 2.5rem;
-  background-color: turquoise;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  border-radius: 1px;
-}
-
 .correct {
-    background-color: yellow;
+    background-color: #6dc922;
 }
 
 .incorrect {
-    background-color: violet;
+    background-color: #c42021;
 }
 
 #saveScorebtn {
  text-align: center;
   text-decoration: none;
-  color: white;
-  background-color:violet;
+  color: #4C5F6B;
+  background-color:#EDffab;
   width: 352px;
   height: 50px;
   padding: 1rem;
@@ -106,8 +92,8 @@ h2 {
 .btn {
   text-align: center;
   text-decoration: none;
-  color: white;
-  background-color: violet;
+  color: #4C5F6B;
+  background-color: #EDffab;
   width: 20rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -136,23 +122,18 @@ h2 {
 #hud {
     display: flex;
     justify-content: space-between;
-    background-color: yellowgreen;
-    padding: 0;
+    width: 100%;
 }
 
-.hud-main-text {
-    margin: 0;
-}
 #hud-item{
-    background-color:green;
-    padding: 0em;
     text-align: center;
     font-size: 13px;
 }
+
 .hud-prefix {
     text-align: center;
     font-size: 20px;
-    background-color: tomato;
+    color: rgb(116, 148, 168);
     margin:0;
 }
 
@@ -182,15 +163,15 @@ input::placeholder {
 
 /* Highscores Page */
 #highScoresList {
-  list-style: none;
-  background-color: chartreuse;
-  margin: auto;
+list-style: none;
+list-style-position: outside;
+margin-bottom: 3rem;
+padding-right: 2rem;
 }
 
 .high-scores {
-font-size: 20px;
-margin: auto;
-background-color: cornflowerblue;
+font-size: 25px;
+color: lightblue;
 }
 
 .high-scores:hover {
