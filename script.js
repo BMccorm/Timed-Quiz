@@ -222,7 +222,7 @@ getNewQuestion = () => {
     stopwatch.time <= 0
   ) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("/scores.HTML");
+    return window.location.assign("./scores.html");
   }
 
   // creates a random number, attaches it to a question in the array and displays it in the h2
