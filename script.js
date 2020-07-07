@@ -55,7 +55,7 @@ var stopwatch = {
     stopwatch.time -= 10;
     if (stopwatch.time <= 0) {
       localStorage.setItem("mostRecentScore", score);
-      return window.location.assign("/scores.HTML");
+      return window.location.assign("scores.html");
     } else {
       // DONE: increment time by 1, remember we cant use "this" here.
 
